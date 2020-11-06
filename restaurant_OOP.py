@@ -1,10 +1,22 @@
 
-class menu:
+class Menu:
     def __init__(self):
-        self.food = {"chicken breast" : 12.00, "salad" : 7.00, "seafood" : 9.00}
-        self.drinks = { "fanta" : 1.20, "coke" : 1.90, "cocktails" : 12.00}
+        self.Menu = {"chicken Breast": "12.00", "Pork Chops": "18.00", "Seafood": "9.00", "Fried Rice": "18.00", "Steak": "20.00", "Coca Cola": "1.20", "Fanta": "1.50"}
+        # self.menu = ["chicken breast", "seafood", "pork chops", "steak", "fried rice", "coke", "fanta"]
 
-# object_menu = menu()
-#
-# print(object_menu.food)
+
+
+
+    def menu_display(self):
+        for key, val in self.Menu.items():
+            print(key + ": " + val)
+
+
+
+
+object_menu = Menu()
+
+# print(object_menu.menu)
+
+print(object_menu.menu_display())
 
